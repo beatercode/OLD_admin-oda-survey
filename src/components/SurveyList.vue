@@ -187,6 +187,7 @@ export default {
   },
   methods: {
     async deleteSurvey(id) {
+      console.log(process.env.VUE_APP_API_BASE)
       await fetch(`${process.env.VUE_APP_API_BASE}/survey/${id}`, {
         method: 'DELETE',
       })
