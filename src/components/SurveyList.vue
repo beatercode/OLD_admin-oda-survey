@@ -176,6 +176,7 @@ export default {
     })
   },
   async created() {
+    console.log(process.env.VUE_APP_API_BASE)
     fetch(`${process.env.VUE_APP_API_BASE}/survey`)
       .then((response) => response.json())
       .then((data) => {
@@ -187,7 +188,6 @@ export default {
   },
   methods: {
     async deleteSurvey(id) {
-      console.log(process.env.VUE_APP_API_BASE)
       await fetch(`${process.env.VUE_APP_API_BASE}/survey/${id}`, {
         method: 'DELETE',
       })
