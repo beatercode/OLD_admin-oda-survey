@@ -1,7 +1,7 @@
 <template>
+  <!-- TITLE -->
+  <h3 class="mt-2 mb-3 float-left text-primary">Surveys Admin Panel</h3>
   <div class="home">
-    <!-- TITLE -->
-    <h3 class="mt-2 mb-3 float-left text-primary">Surveys Admin Panel</h3>
     <!-- TABLE -->
     <table class="table table-striped">
       <thead>
@@ -289,5 +289,8 @@ textarea {
   widows: 100%;
   text-align: left;
   padding: 0.5rem 0.5rem;
+}
+.home {
+  overflow-x: scroll;
 }
 </style>
